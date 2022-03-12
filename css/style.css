@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/**
+ * @author Prénom Nom courriel
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Grille
+ * Mise en page
+ *** entête
+ *** main
+ *** formulaire
+ *** interactivité
+ *** footer
+ */
+
+
+/* Normalize
+   ========================================================================== */
+@import url(_normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(_utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(_typo.css);
+
+/* Grille
+   ========================================================================== */
+@import url(_grille.css);
+
+/* Mise en page
+   ========================================================================== */
+:root {
+   --padding-text: 1rem;
+   --couleur-principale: #93c9b7;
+   --couleur-secondaire: #b9dfc3;
+   --couleur-tertiaire: #fbffea;
+}
+
+/**entete**/
+img {
+   border-style: none;
+   max-width: 100%;
+   display: block;
+}
+
+/**main**/
+main {
+   background-color: white;
+   padding-top: 2rem;
+}
+
+h1 {
+   display: block;
+   width: 100%;
+   padding: 1rem;
+ 
+}
+
+.conteneur {
+   box-shadow: 5px 10px 18px #888
+}
+
+body {
+   line-height: 1.75rem;
+   background-color: var(--couleur-secondaire);
+   background-image: linear-gradient(var(--couleur-principale) 10%, var(--couleur-secondaire) 15%, var(--couleur-tertiaire));
+}
+
+/*interactivité*/
+:focus {
+   outline: #93c9b7 auto 5px
+}
+[type=radio]+label {
+   border: 1px solid transparent;
+   display: inline-block;
+   padding: 0.25rem;
+}
+label {
+   cursor: default; 
+}
+[type=radio]+label img {
+   filter: grayscale(1);
+}
+
+[type=radio]:hover+ label img,[type=radio]:focus+label img  {
+   filter: grayscale(0);
+   cursor: pointer;
+   
+}
+[type=radio]:checked+label {
+   border: 1px solid ;
+   display: inline-block;
+   padding: 0.25rem;
+}
+.erreur {
+   display: none;
+}
+
+.erreur {
+   color: red;
+}
+
+.ctnValidation p {
+   margin: 0.5rem 0;
+}
+button {
+   font-family: "NewsCycle-bold",sans-serif;
+   padding: 1rem;
+   border: 0.5px solid gray;
+   background-color: var(--couleur-secondaire);
+   border-radius: 1rem;
+   transition: all .5s;
+}
+button:hover {
+   transform: scale(1.15);
+   cursor: pointer;
+}
+
+/*formulaire*/
+input[type=text], input[type=email], input[type=tel], input[type=number], select {
+   width: 100%
+}
+
+.telephone p:nth-of-type(2) {
+   text-align: center;
+   align-self: center;
+   padding-top: 0.8rem;
+}
+
+button, input, optgroup, select, textarea {
+   font-family: inherit;
+   font-size: 100%;
+   line-height: 1.5;
+   margin: 0;
+   overflow: visible;
+   border-radius: 5px;
+   border: 1px solid
+}
+select {
+   height:3rem
+}
+
+.sanspuces {
+   list-style: none;
+   padding-inline-start: 0;
+   justify-content: space-between
+}
+
+.intro {
+   margin-top: 5rem;
+   padding-left: 1rem;
+   border-radius: 1rem;
+}
+
+.intro>p:first-of-type {
+   margin-top: 0;
+}
+
+fieldset {
+   border: 0;
+   background-color: #ececec;
+   padding-top: 3rem;
+   border-radius: 1rem;
+}
+
+fieldset fieldset {
+   border: 1.5px groove black;
+   padding: 0.35em 0.75em 0.625em;
+}
+
+fieldset .h2 {
+   position: relative;
+   top: 2.25rem;
+   margin-bottom: 2rem;
+}
+
+fieldset .question {
+   margin-top: 2rem;
+}
+
+.ctnValidation p {
+   margin: 1.5rem 0rem;
+}
+.reglement, .documentation, .soumission {
+   padding-left: 2rem;
+}
+.soumission {
+   padding-bottom: 2rem;
+}
+/**footer**/
+footer {
+   padding:5rem;
+}
+.copyright {
+   text-align: center;
+}
+
