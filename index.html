@@ -15,9 +15,9 @@
     <div class="conteneur">
         <header role="banner" class="header">
             <picture class="entete">
-                <source media="(max-width:599px)" srcset="images\bandeau_600.jpg">
-                <source media="(min-width:600px)" srcset="images\bandeau_1200.jpg">
-                <img src="images\bandeau_600.jpg" alt=" Concours ICI Première. Voyage de rêve. Au menu. Écoutez Gravel le 
+                <source media="(max-width:599px)" srcset="images/bandeau_600.jpg">
+                <source media="(min-width:600px)" srcset="images/bandeau_1200.jpg">
+                <img src="images/bandeau_600.jpg" alt=" Concours ICI Première. Voyage de rêve. Au menu. Écoutez Gravel le
             Matin en semaine 5h30 au 95,1. Courez la chance de gagner un crédit 
             voyage de 20 000$ ! Commandité par Ici Première, Montréal en Lumière, 
             Bell et Voyages Traditours circuits et croisières. ">
@@ -64,7 +64,7 @@
                         <p class="erreur">
                             <span>
                                 <span class="screen-reader-only"> </span>
-                                <spanclass class="icone icone--avertissement" aria-hidden="true"></spanclass>
+                                <span class="icone icone--avertissement" aria-hidden="true"></span>
                             </span>
                             Le prénom ou le nom comporte un ou plusieurs caractères interdits.
                         </p>
@@ -72,7 +72,8 @@
                     <div class="adresse ctnValidation">
                         <p>
                             <label for="Adresse">Adresse</label>
-                            <input type="text" name="rue" id="rue" required>
+<!--                            <input type="text" name="rue" id="rue" required>-->
+                            <input type="text" name="rue" id="Adresse" required>
                         </p>
 
                         <p class="erreur">
@@ -116,7 +117,8 @@
                                     <option value="NU">Nunavut</option>
                                     <option value="YT">Yukon</option>
                                 </optgroup>
-                                <optgroup value="US" label="États-Unis">
+<!--                                <optgroup value="US" label="États-Unis">-->
+                                <optgroup label="États-Unis">
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -181,7 +183,7 @@
                         </p>
                     </div>
                     <div class="codepostal ctnValidation ">
-                        <p><label for="codepostal">Code postal</label>
+                        <p><label for="codepostal">Code postal (A1A 1A1)</label>
                             <input type="text" name="codepostal" id="codepostal" required minlength="7" maxlength="7"
                                 pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
                                 title="Chaîne de six caractères comportant 3 caractères alphanumériques francais et 3 nombre">
@@ -264,7 +266,8 @@
                                 </select>
                             </p>
                             <p class="cols_4_de_12"><label for="annee">Année</label>
-                                <input type="text" name="annee" id="annee" required minlength="4" maxlength="4"
+                                <input type="text" name="annee" id="annee"
+                                       required minlength="4" maxlength="4"
                                     pattern="[0-9]+" title="Manque de caracère">
                             </p>
                         </div>
@@ -285,9 +288,9 @@
                                 <input class ="screen-reader-only" type="radio" name="question" value="fchateaudif" id="dif" required>
                                 <label for="dif">
                                     <picture>
-                                        <source media="(max-width:599px)" srcset="images\chateaudIf.jpg">
-                                        <source media="(min-width:600px)" srcset="images\chateaudIf-small.jpg">
-                                        <img src="images\chateaudIf.jpg" alt="">
+                                        <source media="(max-width:599px)" srcset="images/chateaudIf.jpg">
+                                        <source media="(min-width:600px)" srcset="images/chateaudIf-small.jpg">
+                                        <img src="images/chateaudIf.jpg" alt="">
                                     </picture>
                                     <span>Le chateau d'If</span>
                                 </label>
@@ -297,9 +300,9 @@
                                     required>
                                 <label for="lux">
                                     <picture>
-                                        <source media="(max-width:599px)" srcset="images\palaisluxembourg.jpg">
-                                        <source media="(min-width:600px)" srcset="images\palaisluxembourg-small.jpg">
-                                        <img src="images\palaisluxembourg.jpg" alt="">
+                                        <source media="(max-width:599px)" srcset="images/palaisluxembourg.jpg">
+                                        <source media="(min-width:600px)" srcset="images/palaisluxembourg-small.jpg">
+                                        <img src="images/palaisluxembourg.jpg" alt="">
                                     </picture>
                                     <span>Le palais du Luxembourg</span>
                                 </label>
@@ -308,9 +311,9 @@
                                 <input class ="screen-reader-only" type="radio" name="question" value="tajmahal" id="taj" required>
                                 <label for="taj">
                                     <picture>
-                                        <source media="(max-width:599px)" srcset="images\tajmahal.jpg">
-                                        <source media="(min-width:600px)" srcset="images\tajmahal-small.jpg">
-                                        <img src="images\tajmahal.jpg" alt=" ">
+                                        <source media="(max-width:599px)" srcset="images/tajmahal.jpg">
+                                        <source media="(min-width:600px)" srcset="images/tajmahal-small.jpg">
+                                        <img src="images/tajmahal.jpg" alt=" ">
                                     </picture>
                                     <span>Le Taj Mahal</span>
                                 </label>
@@ -326,7 +329,8 @@
                     </p>
                 </div>
                     <p class="documentation">
-                        <input type="checkbox" name="documentation">
+<!--                        <input type="checkbox" name="documentation">-->
+                        <input id="docu" type="checkbox" name="documentation">
                         <label for="docu">Oui, j'accepte de recevoir de la documentation de Radio-Canada</label>
                     </p>
 
@@ -336,10 +340,10 @@
             </form>
         </main>
     </div>
-    <footer role="copyright">
+    <footer role="contentinfo">
         <section class="copyright">
             <p class="copyright">
-                <strong>@2021, Justin Carrier</strong>
+                <strong>@2022, Justin Carrier</strong>
             </p>
             <p>
                 Réalisé dans le cadre du cours Intégration 2 , <a href="https://timcsf.cegep-ste-foy.qc.ca/">Programme TIM</a>, <a href="https://www.csfoy.ca/accueil/"> Cégep de Sainte-Foy</a>
